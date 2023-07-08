@@ -1,0 +1,177 @@
+main {
+  flex-grow: 1;
+}
+
+//  section build start
+.build {
+  background: $secondary-sacramento-state-green;
+}
+
+.build-container {
+  display: flex;
+  padding-top: 14rem;
+  justify-content: space-between;
+}
+
+.build-left {
+  width: 100%;
+  max-width: 44.5rem;
+}
+
+.build-left__wrapper {}
+
+.build-left__devider {
+  background: $primary-ligth-coral;
+}
+
+
+
+.build-left__title {
+  font-size: 4.8rem;
+  padding-top: 5.4rem;
+
+}
+
+.build-right {
+  margin-bottom: 14rem;
+}
+
+.build-right__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-top: 5.4rem;
+
+
+}
+
+.build-right__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.3rem;
+}
+
+.build-right__img {
+  width: 7.2rem;
+  height: 7.2rem;
+}
+
+.build-right__title-wrapper {
+  width: 100%;
+  max-width: 42.5rem;
+}
+
+.buil-rigth__title {
+  color: $primary-ligth-coral;
+  margin-bottom: 1.6rem;
+}
+
+.build-right__text {}
+
+// section build end
+// section delivering start
+.delivering {
+  position: relative;
+  background: $secondary-deep-jungle-green;
+  padding-top: 14rem;
+  padding-bottom: 15rem;
+
+  &::after {
+    content: url(../images/svg/delivering-left-top-img.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  ;
+
+  &::before {
+    content: url(../images/svg/delivering-right-bottom-img.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+  }
+
+}
+
+
+
+
+
+.delivering-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.delivering__title-wrapper {
+  width: 100%;
+  max-width: 93.2rem;
+  margin-bottom: 9.2rem;
+
+}
+
+.delivering__title {
+  font-size: 4.8rem;
+  line-height: 1;
+
+}
+
+.light-text-blue {
+  color: $secondary-rapture-blue;
+}
+
+.delivering__list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.deliverng__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.delivering__text {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  z-index: 2;
+
+
+  &::after {
+    content: url(../images/svg/delivering-list-item-text-bg.svg);
+    position: absolute;
+    bottom: 8rem;
+    z-index: -1;
+    left: -50%;
+    right: -50%;
+
+  }
+
+}
+
+.delivering__person-name {
+  margin-bottom: 0.2rem;
+  color: $secondary-rapture-blue;
+  line-height: 1.55;
+}
+
+.delivering__person-info {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.delivering__person-img {}
+
+// section delivering end

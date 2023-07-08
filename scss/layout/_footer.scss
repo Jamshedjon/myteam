@@ -1,0 +1,101 @@
+.footer {}
+
+.footer-top {
+  background: $primary-ligth-coral;
+
+}
+
+.footer-top__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+
+
+
+
+}
+
+
+
+.footer-top__title {
+  color: $secondary-sacramento-state-green;
+  font-size: 4.8rem;
+  margin-left: 9.5rem;
+
+}
+
+.button {
+  margin-right: 9.5rem;
+}
+
+.dark-btn {}
+
+.footer-bottom {
+  background: $secondary-dark-green;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.footer-bottom__wrapper {
+  display: flex;
+}
+
+.footer-bottom__nav-wrapper {
+  margin-right: 12.5rem;
+}
+
+.footer-logo__link {
+  margin-bottom: 2.5rem;
+
+
+}
+
+.footer-logo-img {}
+
+.footer-bottom__nav {}
+
+.footer-bottom__list {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-bottom__item {}
+
+.footer-bottom__link {
+  font-weight: 600;
+
+}
+
+.footer-bottom__contact {
+  width: 100%;
+  max-width: 17rem;
+  margin-right: auto;
+  line-height: 1.6;
+  font-weight: 600;
+  opacity: 60%;
+}
+
+.social-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.social-page__wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.facebook-icon {}
+
+.pinterest-icon {}
+
+.twitter-icon {}
+
+.reserved-text {
+  opacity: 60%;
+
+}

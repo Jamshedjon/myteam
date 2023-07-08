@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// *:focus {
+// outline: ;
+// outline-offset: ;
+// }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+  /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: $primary-whtie;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $primary-midnight-green;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px; // *
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6rem; // *
+  padding-right: 6rem; // *
+}
+
+.site-devider {
+  width: 5rem;
+  height: 0.4rem;
+}
