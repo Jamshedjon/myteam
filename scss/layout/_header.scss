@@ -1,4 +1,8 @@
-.header {}
+.header {
+  background: url(../images/svg/header-left-img.svg);
+  background-repeat: no-repeat;
+  background-position: left top 25rem;
+}
 
 
 
@@ -57,22 +61,7 @@
 
 .humburg-icon {}
 
-@media screen and (max-width:800px) {
-  .sitenav {
-    display: none;
 
-  }
-
-  .button {
-    display: none;
-  }
-
-  .navbar-toggle {
-    display: block;
-    background: none;
-
-  }
-}
 
 .header-bottom {
   position: relative;
@@ -92,15 +81,9 @@
   width: 100%;
   max-width: 57rem;
 
-  &::after {
-    content: url(../images/svg/header-left-img.svg);
-    position: absolute;
-    left: -16.5rem;
-    top: 6.5rem;
 
 
 
-  }
 
 
 }
@@ -123,13 +106,9 @@
   width: 100%;
   max-width: 44.5rem;
   padding-bottom: 22.9rem;
-
-  &::after {
-    content: url(../images/svg/header-right-bottom-img.svg);
-    position: absolute;
-    bottom: -7px;
-    right: 0;
-  }
+  background: url(../images/svg/header-right-bottom-img.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 
@@ -138,4 +117,113 @@
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 600;
+}
+
+@media screen and (max-width:1000px) {
+  .header-bottom {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .header-top {
+
+    padding-top: 6.4rem;
+
+  }
+
+  .header-bottom {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-bottom__title {
+    margin-bottom: 2.4rem;
+    font-size: 6.4rem;
+    font-weight: bold;
+    line-height: calc(56/64);
+
+  }
+
+  .header-bottom__text {
+    font-size: 1.5rem;
+
+  }
+
+  .header-bottom__text-wrapper {
+    width: 100%;
+    max-width: 457px;
+  }
+
+  .header-bottom__devider {
+    display: none;
+  }
+
+  .sitenav {
+    display: none;
+
+  }
+
+  .button {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background: none;
+
+  }
+
+  .header-bottom__text-wrapper {
+
+    background-position: bottom center;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .site-logo__link {
+    width: 12.8rem;
+    height: 3.2rem;
+  }
+
+  .header-top {
+
+    padding-top: 4.8rem;
+    margin-bottom: 4rem;
+
+
+  }
+
+  .header-bottom {
+    padding-top: 4rem;
+
+  }
+
+  .header-bottom__title {
+    margin-bottom: 1.8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+
+  }
+
+  .header-bottom__text {
+    font-size: 1.5rem;
+    line-height: calc(28/15);
+
+  }
+
+  .header-bottom__text-wrapper {
+    width: 100%;
+  }
+
+
 }

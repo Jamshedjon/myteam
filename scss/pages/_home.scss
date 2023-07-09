@@ -4,7 +4,10 @@ main {
 
 //  section build start
 .build {
-  background: $secondary-sacramento-state-green;
+
+  background: $secondary-sacramento-state-green url(../images/svg/build-right-bottom-img.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .build-container {
@@ -34,6 +37,10 @@ main {
 
 .build-right {
   margin-bottom: 14rem;
+
+  @include responsive (mobile) {
+    margin-bottom: 6.4rem;
+  }
 }
 
 .build-right__list {
@@ -68,6 +75,46 @@ main {
 
 .build-right__text {}
 
+@media screen and (max-width:869px) {
+  .build-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 57.3rem;
+    padding-top: 10rem;
+  }
+
+  .build-left__title {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .build {
+    background-position: right top;
+  }
+}
+
+@include responsive (mobile) {
+  .build-left__title {
+    width: 100%;
+    max-width: 24rem;
+  }
+
+  .build-right__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  .build-container {
+    padding-top: 6.4rem;
+  }
+}
+
+
 // section build end
 // section delivering start
 .delivering {
@@ -75,23 +122,10 @@ main {
   background: $secondary-deep-jungle-green;
   padding-top: 14rem;
   padding-bottom: 15rem;
+  background-image: url(../images/svg/delivering-left-top-img.svg), url(../images/svg/delivering-right-bottom-img.svg);
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
 
-  &::after {
-    content: url(../images/svg/delivering-left-top-img.svg);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  ;
-
-  &::before {
-    content: url(../images/svg/delivering-right-bottom-img.svg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-  }
 
 }
 
@@ -150,11 +184,12 @@ main {
   &::after {
     content: url(../images/svg/delivering-list-item-text-bg.svg);
     position: absolute;
+    width: 100%;
+    max-width: 6.7rem;
     bottom: 8rem;
     z-index: -1;
-    left: -50%;
-    right: -50%;
-
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 }
