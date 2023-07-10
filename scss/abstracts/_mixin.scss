@@ -1,13 +1,19 @@
-@mixin responsive ($breackpoint) {
-  @if $breackpoint =="tablet" {
-    @media (max-width:768px) {
-      @content
+@mixin responsive($breackpoint) {
+  @if $breackpoint == "tablet" {
+    @media (max-width: 768px) {
+      @content;
     }
   }
 
-  @if $breackpoint =="mobile" {
-    @media (max-width:375px) {
-      @content
+  @if $breackpoint == "mobile" {
+    @media (max-width: 375px) {
+      @content;
     }
   }
+}
+@mixin fontSetting($fz, $fw, $lh, $cl) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $cl;
 }
