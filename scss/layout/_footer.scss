@@ -1,7 +1,10 @@
 .footer {}
 
 .footer-top {
-  background: $primary-ligth-coral;
+  background: $primary-ligth-coral url(../images/svg/footer-left-img.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
 
 }
 
@@ -33,6 +36,7 @@
 .dark-btn {}
 
 .footer-bottom {
+
   background: $secondary-dark-green;
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
@@ -69,8 +73,7 @@
 }
 
 .footer-bottom__contact {
-  width: 100%;
-  max-width: 17rem;
+
   margin-right: auto;
   line-height: 1.6;
   font-weight: 600;
@@ -89,6 +92,10 @@
   gap: 1.6rem;
 }
 
+.reserved-text--tablet {
+  display: none;
+}
+
 .facebook-icon {}
 
 .pinterest-icon {}
@@ -98,4 +105,112 @@
 .reserved-text {
   opacity: 60%;
 
+}
+
+.social-page__wrapper--tablet {
+  display: none;
+}
+
+@media screen and (max-width:1000px) {
+  .footer-top__title {
+    font-size: 3.8rem;
+    margin-left: 9.7rem;
+
+  }
+
+  .dark-btn {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width:782px) {
+  .footer-top__title {
+    font-size: 3.2rem;
+
+
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .footer-logo__link {}
+
+  .footer-logo-img {
+    width: 9.6rem;
+    height: 2.4rem;
+  }
+
+  .social-page {
+    display: none;
+  }
+
+  .social-page__wrapper--tablet {
+    display: block;
+    display: flex;
+    gap: 1.6rem;
+    padding-top: 3.3rem;
+  }
+
+  .footer-bottom__contact {
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+
+  .reserved-text--tablet {
+
+    display: block;
+    padding-top: 3.2rem;
+  }
+
+
+}
+
+@media screen and (max-width:679px) {
+  .footer-top__wrapper {
+    flex-direction: column;
+  }
+
+  .footer-top__title {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:505px) {
+  .footer-bottom__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom__nav-wrapper {
+    margin-right: 0;
+  }
+
+  .footer-bottom__contact {
+    margin-left: 0;
+    text-align: center;
+
+  }
+
+  .footer-bottom__nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .social-page__wrapper--tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width:495px) {
+
+
+  .footer-top__title {
+    font-size: 2.2rem;
+  }
 }

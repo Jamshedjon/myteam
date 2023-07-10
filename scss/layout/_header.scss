@@ -122,6 +122,7 @@
 @media screen and (max-width:1000px) {
   .header-bottom {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -187,6 +188,12 @@
 @media screen and (max-width:375px) {
   .container {
     padding: 0 2.4rem;
+  }
+
+  .header {
+
+    background: none;
+
   }
 
   .site-logo__link {

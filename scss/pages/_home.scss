@@ -209,4 +209,68 @@ main {
 
 .delivering__person-img {}
 
+@include responsive (tablet) {
+  .delivering {
+    padding: 0;
+  }
+
+  .delivering-wrapper {
+    padding: 10rem;
+  }
+
+  .delivering__title {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .delivering__list {
+    flex-direction: column;
+    gap: 8.4rem;
+  }
+
+  .deliverng__item {
+    max-width: 100%;
+  }
+
+  .delivering__text {
+    &::after {
+      bottom: 3rem;
+    }
+
+    font-size: 1.5rem;
+    line-height: calc(25/15);
+    font-weight: 600;
+
+  }
+}
+
+@media screen and (max-width:470px) {
+  .delivering__title {
+    font-size: 2.2rem;
+
+  }
+}
+
+@include responsive (mobile) {
+  .delivering__title-wrapper {
+    width: 100%;
+    max-width: 32.7rem;
+  }
+
+  .delivering__list {
+    width: 100%;
+    max-width: 32.7rem;
+  }
+
+  .delivering-wrapper {
+
+    padding: 14rem 2.4rem 16.5rem 2.4rem;
+  }
+
+  .delivering__title {
+    width: 100%;
+    max-width: 32.7rem;
+  }
+}
+
 // section delivering end
