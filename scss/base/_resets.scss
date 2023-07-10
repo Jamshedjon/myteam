@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 
-// *:focus {
-// outline: ;
-// outline-offset: ;
-// }
+*:focus {
+  outline: 2px dotted $primary-ligth-coral;
+  outline-offset: 5px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,6 +27,10 @@ a {
   text-decoration: none;
   display: inline-block;
   color: $primary-whtie;
+  transition: 0.3s ease;
+  &:hover {
+    color: $primary-ligth-coral;
+  }
 }
 
 ul,
@@ -48,7 +52,6 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: $primary-midnight-green;
-
 }
 
 .container {
