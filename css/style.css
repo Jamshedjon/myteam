@@ -1115,8 +1115,14 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem 3rem;
 }
+@media screen and (max-width: 1149px) {
+  .meet__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .meet__item {
+  position: relative;
   width: 35rem;
   height: 25.3rem;
   display: flex;
@@ -1142,10 +1148,13 @@ main {
   font-style: italic;
 }
 
-.meet__item::before {
-  background: red url(../../pages/about/images/section-meet-item-after-bg.svg);
+.meet__item-before {
+  position: absolute;
+  z-index: 5;
+  background: url(../../pages/about/images/section-meet-item-after-bg.svg);
   width: 5.6rem;
   height: 5.6rem;
+  bottom: -2.8rem;
 }
 
 .clients {
@@ -1172,6 +1181,11 @@ main {
 .clients__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width: 954px) {
+  .clients__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .main {
