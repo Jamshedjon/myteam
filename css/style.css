@@ -621,9 +621,6 @@ button {
   .container {
     padding: 0 2.4rem;
   }
-  .header {
-    background: none;
-  }
   .site-logo__link {
     width: 12.8rem;
     height: 3.2rem;
@@ -1043,6 +1040,79 @@ main {
     max-width: 32.7rem;
   }
 }
+.about-main {
+  flex-grow: 1;
+}
+
+.about-header {
+  background: url(../pages/about/images/header-right-bottom-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-header-bottom {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 24rem;
+  justify-content: space-between;
+}
+
+.about-header-bottom__title-wrapper {
+  width: 100%;
+  max-width: 35rem;
+  margin-right: 3rem;
+}
+
+.about-header-bottom__title {
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 1.5625;
+}
+
+.light-text {
+  color: #F67E7E;
+}
+
+.about-header-bottom__devider {
+  margin-bottom: 4rem;
+  background: #F67E7E;
+}
+
+.about-header-bottom__text-wrapper {
+  width: 100%;
+  padding-bottom: 12rem;
+}
+
+.about-header-bottom__text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.meet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem 3rem;
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .main {
   background-image: url(/pages/contact/images/contact-main-leftt-top-bg.svg), url(/pages/contact/images/contact-main-right-bottom-bg.svg);
   background-repeat: no-repeat;
