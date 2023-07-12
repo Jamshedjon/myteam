@@ -1090,22 +1090,83 @@ main {
   font-weight: 600;
 }
 
+.meet {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background: #004047;
+  background-image: url(../../pages/about/images/section-meet-left-top-bg.svg), url(../../pages/about/images/section-meet-right-bottom-bg.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+
 .meet-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.meet__title {
+  margin-bottom: 6.4rem;
+}
+
 .meet__list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem 3rem;
+}
+
+.meet__item {
+  width: 35rem;
+  height: 25.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #012F34;
+}
+.meet__item img {
+  margin: 0;
+  margin-bottom: 1.6rem;
+  margin-top: 3.2rem;
+}
+.meet__item h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5555555556;
+  color: #79C8C7;
+}
+.meet__item p {
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.meet__item::before {
+  background: red url(../../pages/about/images/section-meet-item-after-bg.svg);
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.clients {
+  background: #012F34 url(../../pages/about/images/section-clients-left-top-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 
 .clients-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.clients__title {
+  margin-bottom: 6.4rem;
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .clients__list {
